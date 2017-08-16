@@ -1,0 +1,13 @@
+C:\Users\Hermine\documents\visual studio 2015\Projects\GoppAutomation\GoppAutomation\bin\Debug\GoppAutomation.dll.config
+C:\Users\Hermine\documents\visual studio 2015\Projects\GoppAutomation\GoppAutomation\bin\Debug\GoppAutomation.dll
+C:\Users\Hermine\documents\visual studio 2015\Projects\GoppAutomation\GoppAutomation\bin\Debug\GoppAutomation.pdb
+C:\Users\Hermine\documents\visual studio 2015\Projects\GoppAutomation\GoppAutomation\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Hermine\documents\visual studio 2015\Projects\GoppAutomation\GoppAutomation\bin\Debug\nunit.framework.dll
+C:\Users\Hermine\documents\visual studio 2015\Projects\GoppAutomation\GoppAutomation\bin\Debug\TechTalk.SpecFlow.dll
+C:\Users\Hermine\documents\visual studio 2015\Projects\GoppAutomation\GoppAutomation\bin\Debug\WebDriver.dll
+C:\Users\Hermine\documents\visual studio 2015\Projects\GoppAutomation\GoppAutomation\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Hermine\documents\visual studio 2015\Projects\GoppAutomation\GoppAutomation\bin\Debug\nunit.framework.xml
+C:\Users\Hermine\documents\visual studio 2015\Projects\GoppAutomation\GoppAutomation\bin\Debug\WebDriver.xml
+C:\Users\Hermine\documents\visual studio 2015\Projects\GoppAutomation\GoppAutomation\obj\Debug\GoppAutomation.csprojResolveAssemblyReference.cache
+C:\Users\Hermine\documents\visual studio 2015\Projects\GoppAutomation\GoppAutomation\obj\Debug\GoppAutomation.dll
+C:\Users\Hermine\documents\visual studio 2015\Projects\GoppAutomation\GoppAutomation\obj\Debug\GoppAutomation.pdb
