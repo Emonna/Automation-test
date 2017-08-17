@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
+using Protractor;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,7 @@ namespace GoppAutomation.Base
     public class BaseCls
     {
         public IWebDriver _driver = new FirefoxDriver();
+        //private NgWebDriver ngDriver;
         public static String GenRandomString()
         {
             var allowedChars = "abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNOPQRSTUVWXYZ0123456789";

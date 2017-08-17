@@ -1,6 +1,8 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
+using Protractor;
 using System;
+using System.Collections.ObjectModel;
 using TechTalk.SpecFlow;
 
 
@@ -10,23 +12,38 @@ namespace GoppAutomation.StepGeneration
     [Binding]
     public class SignupTestSteps: Base.BaseCls
     {
-        
+
+        private IWebDriver driver;
+        private NgWebDriver ngDriver;
+
+
         [Given(@"User filles the fields with  for registration")]
         public void GivenUserFillesTheFieldsWithForRegistration()
         {
-            IWebDriver wd = new FirefoxDriver();
-            //wd.get("http://jsfiddle.net/SAWsA/11/show/");
-            IWebElement input = wd.FindElement(By.TagName("FirstName"));
-            input.SendKeys("hello");
+         ngDriver = new NgWebDriver(driver);
+            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
+
+            /*ReadOnlyCollection<NgWebElement>*/
+            var firstName = ngDriver.FindElement(NgBy.Model("FirstName"));
+            //NgWebElement firstName = ngDriver.FindElement(By.TagName("FirstName"));
+            firstName.SendKeys("hello");
             //input = wd.findElement(By.tagName("input"));
             //System.out.println("fieldValue=" + input.getAttribute("value"));
-            wd.Quit();
+            _driver.Quit();
+
+            //wd.get("http://jsfiddle.net/SAWsA/11/show/");
+            //NgWebElement input = ngDriver.FindElement(By.Name("name='FirstName'"));
+            
+            //input = wd.findElement(By.tagName("input"));
+            //System.out.println("fieldValue=" + input.getAttribute("value"));
+            ngDriver.Quit();
 
 
 
 
-            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            var  firstName = _driver.FindElement(By.CssSelector("input[ng-model='FirstName']"));
+
+            //_driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            //var  firstName = _driver.FindElement(By.CssSelector("input[ng-model='FirstName']"));
           firstName.SendKeys("GenRandomString()");
         }
 

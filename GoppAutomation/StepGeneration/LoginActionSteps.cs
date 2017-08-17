@@ -18,11 +18,12 @@ namespace GoppAutomation.StepGeneration
             {
 
                 _driver.Url = " https://goppa.benivo.com/goppa/signup";
+            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
 
 
-                //var homePage = new GoppAutomation.Utils.LoginTest();
-                //homePage.HomePage();
-            }
+            //var homePage = new GoppAutomation.Utils.LoginTest();
+            //homePage.HomePage();
+        }
 
             [When(@"User Navigate to LogIn Page")]
             public void WhenUserNavigateToLogInPage()
